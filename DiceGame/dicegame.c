@@ -9,23 +9,23 @@ int main() {
     int winNum;
     int i;
 
-    //char playerOne[125];
-    //char playerTwo[125];
+    char playerOne[125];
+    char playerTwo[125];
 
     winNum = 0;
     i = 0;
 
 
-    //printf("Please Enter Player 1 name: ");
-    //scanf(" %c\n", playerOne);
-    //printf("Please Enter Player 2 name: ");
-    //scanf(" %c\n", playerTwo);
-    printf("------------------------------------------------------------------------------------------------\n");
+    printf("\nPlease Enter Player 1 name: ");
+    scanf("%s", playerOne);
+    printf("Please Enter Player 2 name: ");
+    scanf("%s", playerTwo);
+    printf("\n------------------------------------------------------------------------------------------------\n");
     printf("This is the Dice Game. A winning number is decided and both players take turns rolling the dice.\n");
     printf("    Each roll is added together and the first player to hit the winning total wins the game.\n");
     printf("                --- Each Roll has a minimum of 1 and a maximum of 10 ---\n");
     printf("                                Goodluck and Enjoy!\n\n");
-    printf("------------------------------------------------------------------------------------------------\n");
+    printf("------------------------------------------------------------------------------------------------\n\n");
     printf("Please Enter Winning Number (Must be below 100) : ");
     scanf("%d\n", &winNum);
 
@@ -37,23 +37,23 @@ int main() {
 
         srand(time(NULL));
 
-        for (i = 0; i < winNum; i++) {
+        for (i = 0; i > winNum; i++) {
 
             rand();
 
             rndNum = (rand() % 10) + 1;
             rndNum1 = (rand() % 10) + 1;
 
-            printf("Player 1 has rolled a %d\n", rndNum);
-            printf("Player 2 has rolled a %d\n", rndNum1);
+            printf("%s has rolled a %d\n", playerOne, rndNum);
+            printf("%s has rolled a %d\n", playerTwo, rndNum1);
 
             if (rndNum == winNum) {
 
-                printf("Player 1 wins! Congrats!\n");
+                printf("%s wins! Congrats!\n", playerOne);
 
-            } else (rndNum1 == winNum); {
+            } else if (rndNum1 == winNum) {
 
-                printf("Player 2 wins! Congrats!\n");
+                printf("%s wins! Congrats!\n", playerOne);
 
             }
 
