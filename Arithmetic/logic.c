@@ -64,7 +64,7 @@ int main()
     if (payMethod == 1 || payMethod == 3) {
 
         printf("Enter your name: "); //Can't do spaces +++++ Have to figure that out!
-        scanf("%s", name); //No need for address for char || strings
+        scanf(" %c", name); //No need for address for char || strings --> Still not working
         printf("Enter the 16-Digit Number: ");
         scanf("%s", numberSixteen);
         printf("Enter the expiry date (dd/mm/yyyy): ");
@@ -73,7 +73,7 @@ int main()
     } else {
 
         printf("Enter your name: ");
-        scanf("%s", name);
+        scanf(" %c", name);
         printf("Enter the 16-Digit Number: ");
         scanf("%s", numberSixteen);
         printf("Enter the expiry date (dd/mm/yyyy): ");
