@@ -10,7 +10,7 @@ int main() {
     srand(time(NULL));
 
     rand();
-    rndNum1 = (rand() % 6) + 1; // rand() % 7 convertion to make sure 0 won't come. 
+    rndNum1 = (rand() % 6) + 1; // rand() % 7 convertion to make sure 0 won't come.
     rndNum2 = (rand() % 6) + 1;
 
     printf("Player 1 Rolled %d\n", rndNum1);
