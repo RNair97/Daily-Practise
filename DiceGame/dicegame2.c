@@ -26,6 +26,7 @@ int main() {
 
     /* Flag here to turn on when either player has won */
     bool someone_has_won = false; // Flag is currently off.
+    bool win_num_wrong = false;
 
 
     printf("\nPlease Enter Player 1 name: ");
@@ -44,7 +45,14 @@ int main() {
 
     if (winNum >= 100) {
 
-        printf("\nError! Number larger than 100. Please try again and enter a number less than 100.\n");
+        do {
+
+            printf("\nError! Number larger than 100. Please try again and enter a number less than 100.\n");
+            printf("Please Enter Winning Number (Must be below 100) : ");
+
+            scanf("\n%d", &winNum);
+
+        } while(win_num_wrong == true);
 
     } else {
 
