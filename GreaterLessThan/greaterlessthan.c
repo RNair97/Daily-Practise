@@ -17,7 +17,7 @@ int main() {
 
     srand(time(NULL)); //Keeping seed generation outside solved issue
 
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < 50; i++) { //counted loop
 
         rand();
 

@@ -9,11 +9,19 @@ int main() {
     int winNum;
     int i;
 
+    int totalPlayer1;
+    int totalPlayer2;
+
+    int previousTotal1;
+
     char playerOne[125];
     char playerTwo[125];
 
     winNum = 0;
     i = 0;
+
+    totalPlayer1 = 0;
+    totalPlayer2 = 0;
 
 
     printf("\nPlease Enter Player 1 name: ");
@@ -27,37 +35,58 @@ int main() {
     printf("                                Goodluck and Enjoy!\n\n");
     printf("------------------------------------------------------------------------------------------------\n\n");
     printf("Please Enter Winning Number (Must be below 100) : ");
-    scanf("%d\n", &winNum);
 
-    if (winNum > 100) {
+    scanf("%d", &winNum);
 
-        printf("Error! Number larger than 100. Please try again and enter a number less than 100.\n");
+    if (winNum >= 100) {
+
+        printf("\nError! Number larger than 100. Please try again and enter a number less than 100.\n");
 
     } else {
 
-        srand(time(NULL));
+        srand(time(NULL)); //generate SEED ONLY ONCE
 
-        for (i = 0; i > winNum; i++) {
+        rand(); //calling the seed must always be with generator
 
-            rand();
+        do {
 
             rndNum = (rand() % 10) + 1;
             rndNum1 = (rand() % 10) + 1;
 
-            printf("%s has rolled a %d\n", playerOne, rndNum);
-            printf("%s has rolled a %d\n", playerTwo, rndNum1);
+            totalPlayer1 = totalPlayer1 + rndNum; //look at previous total and adds new amount. (random roll)
+            totalPlayer2 = totalPlayer2 + rndNum1;
 
-            if (rndNum == winNum) {
+            printf("\n%s has rolled a %d. Player one has a total of %d\n", playerOne, rndNum, totalPlayer1);
+            printf("%s has rolled a %d. Player two has a total of %d\n", playerTwo, rndNum1, totalPlayer2);
 
-                printf("%s wins! Congrats!\n", playerOne);
+            printf("\n");
 
-            } else if (rndNum1 == winNum) {
+        } while (totalPlayer1 < winNum || totalPlayer2 < winNum);
 
-                printf("%s wins! Congrats!\n", playerOne);
+        if (totalPlayer1 >= winNum && totalPlayer2 >= winNum ) {
+
+            if (totalPlayer1 > totalPlayer2) {
+
+                printf("\n%s wins! Congrats! Total was %d\n", playerOne, totalPlayer1);
+
+            } else {
+
+                printf("\n%s wins! Congrats! Total was %d\n", playerTwo, totalPlayer2);
 
             }
 
+
+        } else if (totalPlayer1 >= winNum) {
+
+            printf("\n%s wins! Congrats! Total was %d\n", playerOne, totalPlayer1);
+
+        } else if (totalPlayer2 >= winNum) {
+
+            printf("\n%s wins! Congrats! Total was %d\n", playerTwo, totalPlayer2);
+
         }
+
+
 
     }
 
