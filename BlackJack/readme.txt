@@ -9,7 +9,7 @@
 - Repeat Loop 1 until [Stay]
 - Repeat Loop 2 until [Stay]
 
-- Figure out who won
-- Print winner name
+- Figure out who won --> If statements
+- Print winner name --> Part of if statements
 
 ~ Will need srand ~
