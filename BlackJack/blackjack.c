@@ -78,6 +78,7 @@ int main() {
 
             printf("%s hits! Total is : %d\n", nameTwo, totalPlayer2);
 
+
         } else {
 
             totalPlayer2 = totalPlayer2;
@@ -92,6 +93,17 @@ int main() {
     } while(player_two_turn == true);
 
 } while(player_one_turn == false && player_two_turn == false);
+
+    if (totalPlayer1 > totalPlayer2) {
+
+        printf("%s wins!\n", nameOne);
+
+    } else {
+
+        printf("%s wins!\n", nameTwo);
+        
+    }
+
 
 
     return 0;
