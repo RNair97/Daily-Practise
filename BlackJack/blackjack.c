@@ -85,6 +85,22 @@ int main() {
 
             }
 
+            if (totalPlayer1 == 21) {
+
+                player_one_turn = false;
+                player_two_turn = false;
+
+            }
+
+            if (totalPlayer1 > 21) {
+
+                player_one_turn = false;
+                player_two_turn = false;
+
+                printf("%s lost for going over 21!\n", nameOne);
+
+            }
+
 
         }
 
@@ -133,17 +149,24 @@ int main() {
 
             }
 
-        }
+            if (totalPlayer2 == 21) {
 
-        if (totalPlayer1 >= 21) {
+                player_two_turn = false;
+                player_one_turn = false;
 
-            player_one_turn = false;
+            }
 
-        }
 
-        if (totalPlayer2 >= 21) {
+            if (totalPlayer1 > 21) {
 
-            player_two_turn = false;
+                player_one_turn = false;
+                player_two_turn = false;
+
+                printf("%s lost for going over 21!\n", nameTwo);
+
+            }
+
+
 
         }
 
