@@ -135,6 +135,17 @@ int main() {
 
         }
 
+        if (totalPlayer1 >= 21) {
+
+            player_one_turn = false;
+
+        }
+
+        if (totalPlayer2 >= 21) {
+
+            player_two_turn = false;
+
+        }
 
     } while(player_one_turn == true || player_two_turn == true);
 
