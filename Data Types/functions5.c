@@ -1,24 +1,20 @@
 #include <stdio.h>
 
-char markComment(char markComment);
+void mark_checker(int mark);
 
 int main() {
 
     int mark;
-    char markComment[125];
 
     printf("Enter your mark : ");
-    scanf("%d", mark);
+    scanf("%d", &mark);
 
-    int mark = markComment(markComment);
-
-    printf("%s\n", markComment);
-
+    mark_checker(mark);
 
     return 0;
 }
 
-char mark_comment(char markComment) {
+void mark_checker(int mark) {
 
     if (mark < 50) {
 
@@ -26,30 +22,34 @@ char mark_comment(char markComment) {
 
     }
 
-    if (mark > 50 && mark < 60) {
+    if (mark >= 50 && mark < 60) {
 
         printf("You got a D\n");
 
     }
 
-    if (mark > 60 && mark < 70) {
+    if (mark >= 60 && mark < 70) {
 
         printf("You got a C\n");
 
     }
 
-    if (mark > 70 && mark < 80) {
+    if (mark >= 70 && mark < 80) {
 
         printf("You got a B\n");
 
     }
 
-    if (mark > 80) {
+    if (mark >= 80 && mark < 101) {
 
         printf("You got an A\n");
 
     }
 
-    return markComment;
+    if (mark >= 101) {
+
+        printf("Good Job! You're really smart!\n");
+
+    }
 
 }
