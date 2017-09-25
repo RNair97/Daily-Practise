@@ -1,0 +1,31 @@
+***************************************************************************************************
+Pass by Reference: Give me the original copy(address), I edit it, and send it back
+Pass by Value: Give me a copy of the address, I edit it, I do whatever I want with it
+***************************************************************************************************
+
+>> Pointers
+
+The unary or monadic operator & gives the ``address of a variable''.
+
+The indirection or dereference operator * gives the ``contents of an object pointed to by a pointer''.
+
+To declare a pointer to a variable:
+
+   int *pointer;
+   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+int  var = 20;   /* actual variable declaration */
+int  *ip;        /* pointer variable declaration */
+
+ip = &var;  /* store address of var in pointer variable*/
+
+printf("Address of var variable: %x\n", &var);
+
+/* address stored in pointer variable */
+printf("Address stored in ip variable: %x\n", ip);
+
+/* access the value using the pointer */
+printf("Value of *ip variable: %d\n", *ip); //
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+***************************************************************************************************
