@@ -74,6 +74,8 @@ Use & before every single variable other than arrays
     balance = balance * 1.13;
 
     "==" testing variable
+    "&&" and
+    "||" or
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
