@@ -89,4 +89,12 @@ How to change a variable type temporarily?
 
     answer = (float)a + (float)b; //changes it JUST for this line
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> Shorthand If Else
+
+    (test) ? trueCode : falseCode;
+    (age >= 20) ? printf("Nice\n") : printf("Sucks\n");
+
+
 ***************************************************************************************************
