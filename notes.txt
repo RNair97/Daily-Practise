@@ -44,6 +44,45 @@ NULL Terminator, \0 **
 >> Headers/Preprocessor Directive
 
 Constant Variables?     #define EXAMPLE "50" << Needs to be capital, add value
-How to use?     In main add it like any other variable      printf("Value is %d \n", EXAMPLE); 
+How to use?     In main add it like any other variable      printf("Value is %d \n", EXAMPLE);
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> scanf
+
+Use & before every single variable other than arrays
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> Math
+
+% is the remainder of the number. "number % 7"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> Small Ideas
+
+    int a;
+    int b;
+    int c;
+    OR
+    int a, b, c;
+
+    a = b = c = 32;
+
+    balance *= 1.13;
+    balance = balance * 1.13;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> Typecasting
+
+How to change a variable type temporarily?
+
+    int a = 5;
+    int b = 6.4;
+    float answer;
+
+    answer = (float)a + (float)b; //changes it JUST for this line
 
 ***************************************************************************************************
