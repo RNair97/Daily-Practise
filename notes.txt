@@ -106,6 +106,6 @@ How to change a variable type temporarily?
 
 >> For Loops
 
-for (when do you want to start, when do you want to end, increment) //go up by more than one?       variable += number (f += 9);
+for (when do you want to start, when do you want to end, increment) //go up by more than one? [variable += number (f += 9);]
 
 ***************************************************************************************************
