@@ -12,20 +12,38 @@ The indirection or dereference operator * gives the ``contents of an object poin
 To declare a pointer to a variable:
 
    int *pointer;
-   
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-int  var = 20;   /* actual variable declaration */
-int  *ip;        /* pointer variable declaration */
+    int  var = 20;   /* actual variable declaration */
+    int  *ip;        /* pointer variable declaration */
 
-ip = &var;  /* store address of var in pointer variable*/
+    ip = &var;  /* store address of var in pointer variable*/
 
-printf("Address of var variable: %x\n", &var);
+    printf("Address of var variable: %x\n", &var);
 
 /* address stored in pointer variable */
-printf("Address stored in ip variable: %x\n", ip);
+    printf("Address stored in ip variable: %x\n", ip); //%x to find the address
 
 /* access the value using the pointer */
-printf("Value of *ip variable: %d\n", *ip); //
+    printf("Value of *ip variable: %d\n", *ip); //
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> Arrays/Strings
+
+NULL Terminator, \0 **
+
+    char name[256];
+    name = "Someone Else";
+
+[We can change a value in the array by redefining it] :     name[2] = 'z';
+
+[How to change whole value?] :      strcpy(variable that is changing, what you want new value to be) --> strcpy(name, Text Case One);
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> Headers/Preprocessor Directive
+
+Constant Variables?     #define EXAMPLE "50" << Needs to be capital, add value
+How to use?     In main add it like any other variable      printf("Value is %d \n", EXAMPLE); 
 
 ***************************************************************************************************
