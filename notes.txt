@@ -77,6 +77,8 @@ Use & before every single variable other than arrays
     "&&" and
     "||" or
 
+    ++a //change 'a' before
+    a++ //change 'a' after
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 >> Typecasting
@@ -95,6 +97,10 @@ How to change a variable type temporarily?
 
     (test) ? trueCode : falseCode;
     (age >= 20) ? printf("Nice\n") : printf("Sucks\n");
+
+    int friends = 99;
+
+    printf("I have %d friend%s \n", friends, (friends != 1) ? "s" : "");
 
 
 ***************************************************************************************************
