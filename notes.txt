@@ -102,5 +102,10 @@ How to change a variable type temporarily?
 
     printf("I have %d friend%s \n", friends, (friends != 1) ? "s" : "");
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>> For Loops
+
+for (when do you want to start, when do you want to end, increment)
 
 ***************************************************************************************************
