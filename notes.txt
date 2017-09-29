@@ -135,6 +135,20 @@ for (when do you want to start, when do you want to end, increment) //go up by m
 
 >> Switch
 
-    
+    char grade = 'C';
+
+    switch(grade) {
+        case 'A' : printf("Nice\n");
+                break;
+        case 'B' : printf("Decent\n");
+                break;
+        case 'C' : printf("Not great\n");
+                break;
+        case 'D' : printf("Word Harder\n");
+                break;
+        case 'F' : printf("Bad\n");
+                break;
+        default : printf("That doesn't make sense!")
+    }
 
 ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
