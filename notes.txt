@@ -83,6 +83,10 @@ Use & before every single variable other than arrays
 
     ++a //change 'a' before
     a++ //change 'a' after
+
+    <ctype.h> //include this for functions
+
+    
 ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 
 >> Typecasting
