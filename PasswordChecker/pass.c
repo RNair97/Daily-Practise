@@ -10,17 +10,19 @@ int main() {
 
     char* userInput;
     int i;
+    int j;
     bool lowercase = false;
     bool uppercase = false;
     bool dollarSign = false;
     bool numberValue = false;
+    bool abChecker = false;
 
     printf("\n••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n");
     printf("Wanna make a good password? This program will help you out.\n");
     printf("Enter a password but make sure it atleast has the following: \n  ONE uppercase letter \n  ONE lowercase letter \n  $ sign \n  ONE number\n");
     printf("••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n");
 
-    printf("\nEnter Password :  ");
+    printf("\nEnter Password : ");
     scanf("%s", userInput);
 
     int passwordLength = get_length(userInput);
@@ -30,6 +32,12 @@ int main() {
         if ( islower(userInput[i])) {
 
             lowercase =  true;
+
+            if (userInput[i] == 'a' && userInput[i + 1] == 'b') {
+
+                    abChecker = true;
+
+                }
 
         }
 
@@ -53,7 +61,7 @@ int main() {
 
     }
 
-    if (lowercase == true && uppercase == true && dollarSign == true && numberValue == true) {
+    if (lowercase == true && uppercase == true && dollarSign == true && numberValue == true && abChecker == true) {
 
         printf("Password is good!\n\n");
 
