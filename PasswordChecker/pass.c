@@ -13,10 +13,11 @@ int main() {
     bool lowercase = false;
     bool uppercase = false;
     bool dollarSign = false;
+    bool numberValue = false;
 
     printf("\n••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n");
     printf("Wanna make a good password? This program will help you out.\n");
-    printf("Enter a password but make sure it atleast has the following: \n  ONE uppercase letter \n  ONE lowercase letter \n  $ sign\n");
+    printf("Enter a password but make sure it atleast has the following: \n  ONE uppercase letter \n  ONE lowercase letter \n  $ sign \n  ONE number\n");
     printf("••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••\n");
 
     printf("\nEnter Password :  ");
@@ -44,11 +45,17 @@ int main() {
 
         }
 
+        else if ( isdigit(userInput[i]) ) {
+
+            numberValue = true;
+
+        }
+
     }
 
-    if (lowercase == true && uppercase == true && dollarSign == true) {
+    if (lowercase == true && uppercase == true && dollarSign == true && numberValue == true) {
 
-        printf("Password is good!\n");
+        printf("Password is good!\n\n");
 
     } else {
 
